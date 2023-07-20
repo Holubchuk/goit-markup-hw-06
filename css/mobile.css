@@ -1,0 +1,62 @@
+@media (min-width: 480px) {
+ 
+  .main-container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+
+  .nav-list,
+  .contacts-list {
+    display: none;
+  }
+  /* -----------------------HERO------------------------- */
+  .first-section {
+    padding: 112px 0;
+    margin: 0 auto;
+  }
+
+  .first-section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    max-width: 320px;
+  }
+  .first-section-button {
+    margin: 72px auto 0;
+  }
+
+
+  /*------------------------- Features----------------- */
+  .conraiter-features-svg {
+    display: none;
+  }
+  .main-container-features {
+    padding: 96px 16px;
+  }
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .features-title {
+    text-align: center;
+  }
+  .main-container-products {
+    display: none;
+  }
+
+  /* -----------------------------Team------------------ */
+
+  .team-section {
+    padding: 96px 82px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+ 
+}
