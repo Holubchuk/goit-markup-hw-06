@@ -344,7 +344,7 @@ address {
 .customers {
   padding: 120px 0;
 }
-.customers-title {
+/* .customers-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -353,7 +353,7 @@ address {
   text-align: center;
   color: var(--first-section-color);
   margin-bottom: 72px;
-}
+} */
 .customers-list {
   display: flex;
   gap: 24px;
@@ -362,7 +362,7 @@ address {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
-.customers-link {
+/* .customers-link {
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -385,11 +385,11 @@ address {
 .svg:hover,
 .svg:focus {
   fill: var(--hover-color);
-}
+} */
 
 /* ----------------------------FOOTER------------------------------- */
 .footer {
-  background-color: var(--first-section-color);
+  /* background-color: var(--first-section-color); */
   padding: 100px 0;
 }
 .footer-main-container {
@@ -399,7 +399,7 @@ address {
 .container-footer {
   margin-right: 120px;
 }
-.footer-logo {
+/* .footer-logo {
   display: flex;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
@@ -412,26 +412,26 @@ address {
 }
 .logo-footer {
   color: var(--studio-color-footer);
-}
-.footer-text {
+} */
+/* .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--studio-color-footer);
   max-width: 264px;
-}
+} */
 .footer-social {
   margin-right: 80px;
 }
-.social-title {
+/* .social-title {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
-}
-.social-list {
+} */
+/* .social-list {
   display: flex;
   gap: 16px;
 }
@@ -456,15 +456,15 @@ address {
 }
 .social-svg {
   fill: #f4f4fd;
-}
-.subscribe-title {
+} */
+/* .subscribe-title {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-}
+} */
 .subscribe-form {
   display: flex;
   gap: 24px;
@@ -486,7 +486,7 @@ address {
 .subscribe-input::placeholder {
   color: #fff;
 }
-.subscribe-button {
+/* .subscribe-button {
   color: #ffffff;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -512,7 +512,7 @@ address {
 .subscribe-svg {
   margin-left: 16px;
   fill: #ffffff;
-}
+} */
 }
 /* --------------------------PORTFOLIO------------------------- */
 .portfolio {
@@ -622,7 +622,7 @@ address {
   border-top: none;
 }
 
-/* -----------------------MODAL--------------- */
+/* -----------------------MODAL---------------
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -806,4 +806,4 @@ address {
 .form-button:hover,
 .form-button:focus {
   background-color: var(--hover-color);
-}
+} */
