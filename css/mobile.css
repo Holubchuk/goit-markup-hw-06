@@ -1,6 +1,6 @@
-@media (min-width: 390px) {
+@media (min-width: 380px) {
   .container {
-    max-width: 390px;
+    max-width: 380px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
