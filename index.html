@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
     <title>WebStudio</title>
   </head>
@@ -58,11 +59,14 @@
             </li>
           </ul>
         </address>
-        <a href="#" class="menu-hamburger">
+        <button
+          class="menu-toggle menu-hamburger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
           <svg width="32" heidht="22">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
-        </a>
+        </button>
       </div>
     </header>
     <main>
@@ -175,6 +179,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 class="team-image"
                 src="./images/team-1.jpg"
                 alt="Mark Guerrero"
@@ -212,6 +217,7 @@
 
             <li class="team-list-item">
               <img
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 class="team-image"
                 src="./images/team-2.jpg"
                 alt="Tom Ford"
@@ -249,6 +255,7 @@
 
             <li class="team-list-item">
               <img
+              srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 class="our-team-image"
                 src="./images/team-3.jpg"
                 alt="Camila Garcia"
@@ -286,6 +293,7 @@
 
             <li class="team-list-item">
               <img
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 class="our-team-image"
                 src="./images/team-4.jpg"
                 alt="Daniel Wilson"
@@ -488,6 +496,50 @@
         </form>
       </div>
     </div>
+
+    <!---------------------------- Modal Menu------------------ -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-close js-close-menu">
+        <svg class="close-svg" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-list list">
+        <li class="menu-item"><a class="menu-link link" href="./index.html">Studio</a></li>
+        <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+        <li class="menu-item"><a class="menu-link link" href="./">Contacts</a></li>
+      </ul>
+      <ul class="menu-contacts-list list">
+        <li><a class="menu-contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li><a class="menu-contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <address>
+      <ul class="menu-social-list list">
+        <li class="social-item">
+          <a href="#" class="social-link-svg">
+            <svg class="social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use></svg></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link-svg">
+            <svg class="social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use></svg></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link-svg">
+            <svg class="social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use></svg></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link-svg">
+            <svg class="social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
+        </li>
+      </ul>
+    </address>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

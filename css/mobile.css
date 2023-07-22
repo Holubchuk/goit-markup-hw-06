@@ -1,5 +1,11 @@
 @media (min-width: 480px) {
- 
+  .container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .main-container-header {
     display: flex;
     justify-content: space-between;
@@ -11,12 +17,26 @@
   .contacts-list {
     display: none;
   }
+  .menu-hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
   /* -----------------------HERO------------------------- */
   .first-section {
-    padding: 112px 0;
-    margin: 0 auto;
+    min-height: 432px;
   }
-
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .first-section {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-mobile@2x.jpg);
+    }
+  }
   .first-section-title {
     font-size: 36px;
     line-height: 1.11;
@@ -26,7 +46,6 @@
   .first-section-button {
     margin: 72px auto 0;
   }
-
 
   /*------------------------- Features----------------- */
   .conraiter-features-svg {
@@ -91,7 +110,7 @@
     margin-bottom: 72px;
   }
   .social-title {
-  text-align: center;
+    text-align: center;
   }
   .social-list {
     justify-content: center;
@@ -119,5 +138,76 @@
   }
   .subscribe-button {
     margin: 0 auto;
+  }
+  /* ----------------------Modal-menu----------------- */
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 0 40px 40px;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  }
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  .modal-close {
+    background-color: transparent;
+  }
+  .menu-list {
+    margin-bottom: 284px;
+    display: block;
+  }
+  .menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 40px;
+    display: block;
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #404bbf;
+  }
+  .menu-contacts-tel {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    color: #434455;
+    display: block;
+  }
+  .menu-contacts-email {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    display: block;
+    margin-bottom: 48px;
+  }
+  .menu-contacts-tel:hover,
+  .menu-contacts-tel:focus {
+    color: #4d5ae5;
+  }
+  .menu-contacts-email:hover,
+  .menu-contacts-email:focus {
+    color: #4d5ae5;
+  }
+  .menu-social-list {
+    display: flex;
+    gap: 56px;
   }
 }
