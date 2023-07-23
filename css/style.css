@@ -131,7 +131,6 @@ address {
     letter-spacing: 0.02em;
     color: var(--first-section-color);
     margin-bottom: 8px;
-    max-width: 396px;
   }
 .features-text {
     font-size: 16px;
@@ -139,7 +138,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-color);
-    max-width: 396px;
   }
 /* -------------------Team--------------- */
 .team-section {

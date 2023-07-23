@@ -1,39 +1,175 @@
-@media (min-width:768px){
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .container-nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-section-color);
+    text-decoration: none;
+    padding: 24px 0;
+    display: block;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--hover-color);
+  }
+  .current {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
+  .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    width: 100%;
+  }
 
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--body-color);
+    display: block;
+   margin: 16px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: var(--hover-color);
+  }
+  
+  .main-container-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .contacts-list {
+   display: block;
+}
+  
+  .menu-hamburger {
+    display: none;
+  }
 
+  /* -----------------------------Hero -----------------------------*/
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tablet.jpg);
+    min-height: 436px;
+  }
 
-
-
-
-
-
-
-
-
-   
-    
-
-    /* -----------------------------Hero -----------------------------*/
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .first-section {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-          ),
-          url(../images/hero-tablet.jpg);
-          min-height: 436px;
-      }
-
-      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .first-section {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-          ),
-          url(../images/hero-tablet@2x.jpg);
-      }
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tablet@2x.jpg);
     }
+  }
+  .first-section-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    text-transform: none;
+  }
+  .first-section-button {
+    margin: 36px auto 0;
+  }
+/* -------------------------------FEATURES-------------------------------- */
+.features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+}
+.features-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .features-title {
+    text-align: left;
+  }
 
+  /*--------------------------------- TEAM------------------------- */
+
+  .team-section {
+    padding: 96px 108px;
+  }
+    .team-list {
+        flex-direction: row;
+        gap: 24px;
+        row-gap: 64px;
+}
+.team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* ---------------------------CUSTOMERS------------------------ */
+
+  .customers-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+   /* ----------------------------FOOTER------------------------------- */
+
+   .container-tablet {
+    display: flex;
+    gap: 24px;
+    margin-left: 108px;
+   }
+   .footer-logo {
+    justify-content: left;
+  }
+  .social-title {
+    text-align: left;
+  }
+  .subscribe-title {
+    text-align: left;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe {
+    margin-left: 108px;
+  }
+  .subscribe-input {
+    margin-bottom: 0;
+  }
+  .subscribe-label {
+    min-width: 264px;
+  }
+  .subscribe-button {
+    margin: 0;
+  }
 }

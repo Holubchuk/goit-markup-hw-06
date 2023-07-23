@@ -11,9 +11,6 @@
   display: flex;
   align-items: center;
 }
-.link {
-  text-decoration: none;
-}
 
 .nav-link {
   font-weight: 500;
@@ -61,17 +58,9 @@
   color: var(--hover-color);
 }
 
-.main-container-header {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
 .contacts-list {
   display: flex;
+  flex-direction: row;
   gap: 40px;
 }
 
@@ -103,13 +92,11 @@
     }
   }
   
-
 .first-section-title {
   font-size: 56px;
   line-height: 1.07;
   max-width: 496px;
   text-transform: none;
-
 }
 .first-section-button {
   margin: 48px auto 0;
@@ -142,7 +129,6 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  text-align: left;
 }
 .features-text {
   font-weight: 400;
@@ -197,44 +183,39 @@
 }
 
 .customers-list {
-  display: flex;
   gap: 24px;
 }
 .customers-item {
   width: calc((100% - 120px) / 6);
-  height: 88px;
 }
 
 
 /* ----------------------------FOOTER------------------------------- */
 .footer {
-
   padding: 100px 0;
 }
 .footer-main-container {
   display: flex;
   align-items: baseline;
 }
+.container-tablet {
+  margin-left: 0;
+  gap: 0;
+}
 .container-footer {
   margin-right: 120px;
-}
-.footer-logo {
-  justify-content: left;
 }
 
 .footer-social {
   margin-right: 80px;
 }
-.social-title {
-  text-align: left;
-}
-.subscribe-title {
-  text-align: left;
-}
 
 .subscribe-form {
   display: flex;
   gap: 24px;
+}
+.subscribe {
+  margin-left: 0;
 }
 .subscribe-input {
   width: 264px;
