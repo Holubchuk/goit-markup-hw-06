@@ -2,6 +2,9 @@
   .container {
     max-width: 1158px;
   }
+  .team-section > .container {
+    max-width: 1158px;
+  }
   .logo {
     margin-right: 76px;
     display: flex;
@@ -78,9 +81,9 @@
     padding: 188px 0;
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1400px),
+    screen and (min-resolution: 192dpi) and (min-width: 1400px),
+    screen and (min-resolution: 2dppx) and (min-width: 1400px) {
     .first-section {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -177,6 +180,9 @@
   .customers {
     padding: 120px 0;
   }
+  .customers > .container {
+    max-width: 1158px;
+  }
 
   .customers-list {
     gap: 24px;
@@ -186,6 +192,9 @@
   }
 
   /* ----------------------------FOOTER------------------------------- */
+  .footer > .container {
+    max-width: 1158px;
+  }
   .footer {
     padding: 100px 0;
   }

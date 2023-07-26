@@ -1,6 +1,9 @@
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 766px;
+  }
+  .team-section > .container {
+    max-width: 766px;
   }
   .logo {
     margin-right: 120px;
@@ -40,13 +43,19 @@
     width: 100%;
   }
 
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .contacts-link {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--body-color);
     display: block;
-    margin: 16px 0;
+    /* margin: 16px 0; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contacts-link:hover,
@@ -54,17 +63,9 @@
     color: var(--hover-color);
   }
 
-  .main-container-header {
-    display: flex;
-    justify-content: space-between;
-  }
   .nav-list {
     display: flex;
     gap: 40px;
-  }
-
-  .contacts-list {
-    display: block;
   }
 
   .menu-hamburger {
@@ -121,6 +122,11 @@
   .team-section {
     padding: 96px 0;
   }
+
+  .team-section > .container {
+    max-width: 582px;
+  }
+
   .team-list {
     flex-direction: row;
     gap: 24px;
@@ -131,7 +137,9 @@
   }
 
   /* ---------------------------CUSTOMERS------------------------ */
-
+  .customers > .container {
+    max-width: 582px;
+  }
   .customers-list {
     gap: 24px;
     row-gap: 72px;
@@ -142,10 +150,12 @@
 
   /* ----------------------------FOOTER------------------------------- */
 
+  .footer > .container {
+    max-width: 582px;
+  }
   .container-tablet {
     display: flex;
     gap: 24px;
-    margin-left: 108px;
   }
   .footer-logo {
     justify-content: left;
@@ -160,9 +170,6 @@
     display: flex;
     gap: 24px;
   }
-  .subscribe {
-    margin-left: 108px;
-  }
   .subscribe-input {
     margin-bottom: 0;
   }
@@ -171,6 +178,9 @@
   }
   .subscribe-button {
     margin: 0;
+  }
+  .menu-container {
+    display: none;
   }
 
   /* ---------------------Portfolio-------------------- */
