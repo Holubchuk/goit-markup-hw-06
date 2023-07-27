@@ -5,16 +5,19 @@
 
   /* -----------------------HERO------------------------- */
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+
+  .first-section {
+    background-size: 528px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .first-section {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero-mobile@2x.jpg);
-        background-size: 528px;
     }
   }
 
@@ -25,7 +28,7 @@
     width: 360px;
   }
   .menu-container-center {
-    width: 426px;
+    width: 428px;
   }
 
 }

@@ -381,29 +381,30 @@
     <!------------------------ Modal menu---------------- -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="modal-close js-close-menu">
+      <div class="menu-container-center">
+      <button class="modal-close-menu js-close-menu">
         <svg class="close-svg" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <ul class="menu-list list">
         <li class="menu-item">
-          <a class="menu-link link" href="./index.html">Studio</a>
+          <a class="menu-link link menu-current" href="./index.html">Studio</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link link menu-current" href="./portfolio.html">Portfolio</a>
+          <a class="menu-link link" href="./portfolio.html">Portfolio</a>
         </li>
         <li class="menu-item">
           <a class="menu-link link" href="./">Contacts</a>
         </li>
       </ul>
       <ul class="menu-contacts-list list">
-        <li>
+        <li class="menu-contacts-item">
           <a class="menu-contacts-tel link" href="tel:+110001111111"
             >+11 (000) 111-11-11</a
           >
         </li>
-        <li>
+        <li class="menu-contacts-item">
           <a class="menu-contacts-email link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
@@ -433,6 +434,7 @@
           </li>
         </ul>
       </address>
+     </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
