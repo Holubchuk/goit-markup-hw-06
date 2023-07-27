@@ -14,7 +14,18 @@
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero-mobile@2x.jpg);
+        background-size: 528px;
     }
+  }
+
+  .modal{ 
+    width: 392px;
+  }
+  .form-head {
+    width: 360px;
+  }
+  .menu-container-center {
+    width: 426px;
   }
 
 }
