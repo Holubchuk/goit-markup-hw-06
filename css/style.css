@@ -566,7 +566,6 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   background-color: #fcfcfc;
-  /* min-width: 408px; */
   width: 95%;
   min-height: 584px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -738,7 +737,6 @@ address {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 24px 0 40px 40px;
     background-color: var(--white-color);
     z-index: 2;
     transform: translateX(100%);
@@ -756,6 +754,8 @@ address {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 24px 24px 40px 40px;
+    margin: 0 auto;
   }
 
   .modal-close-menu {
@@ -824,7 +824,7 @@ address {
     color: var(--brand-color);
   }
   
-  @media (max-width:400px) {
+  @media (max-width:420px) {
     .menu-contacts-tel {
       font-size: 25px;
     }
@@ -850,7 +850,7 @@ address {
     gap: 56px;
   }
 
-  @media (max-width:400px) {
+  @media (max-width:420px) {
     .menu-social-list {
       gap: 36px;
     }
